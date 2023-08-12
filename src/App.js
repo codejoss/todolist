@@ -12,9 +12,9 @@ function App() {
       <TodoSearch />
 
       <TodoList>
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
+       <TodoItem />
+       <TodoItem />
+       <TodoItem />
       </TodoList>
 
       {/* <CreateTodoButton /> */}
