@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  background: #2f2f2f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  place-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  color: #0080ff;
+  margin-top: 1em;
+  text-transform: uppercase;
+}
