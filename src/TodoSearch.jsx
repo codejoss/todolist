@@ -6,7 +6,7 @@ function TodoSearch () {
 
   return (
     <input
-      placeholder="Pagar renta..."
+      placeholder="Pagar renta...."
       className='TodoSearch'
       value={searchValue}
       onChange={(event) => {
