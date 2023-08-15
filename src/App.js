@@ -20,11 +20,11 @@ function App () {
   const [todos, setTodos] = React.useState(defaultTodos);
 
   const [searchValue, setSearchValue] = React.useState('');
-  console.log('Log desde App()', searchValue);
 
   // Estados derivados
   const completedTodos = todos.filter(todo => !!todo.completed).length;
   const totalTodos = todos.length;
+  const searchedTodos = todos.filter(todo => todo.text.toLowerCase().includes(searchValue.toLowerCase()));
 
   // Begin component
   return (
@@ -36,8 +36,7 @@ function App () {
       />
 
       <TodoList>
-
-       { defaultTodos.map(todo => (
+       { searchedTodos.map(todo => (
         <TodoItem
           key={todo.text}
           text={todo.text}
