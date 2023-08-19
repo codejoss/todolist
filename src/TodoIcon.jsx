@@ -1,16 +1,18 @@
 /* eslint-disable quote-props */
 import { FaCheck as CheckIcon, FaTrashAlt as DeleteIcon } from 'react-icons/fa';
+import './TodoIcon.css';
 
 const iconTypes = {
-  'check': <CheckIcon />,
-  'delete': <DeleteIcon />
+  'check': (color) => <CheckIcon className='Icon-svg' fill={color} />,
+  'delete': (color) => <DeleteIcon className='Icon-svg' fill={color} />
 };
-function TodoIcon ({ type }) {
+function TodoIcon ({ type, color, onClick }) {
   return (
     <span
-      className={`Icon Icon-svg Icon-${type}`}
+      className={`Icon-container Icon-container-${type}`}
+      onClick={onClick}
     >
-      {iconTypes[type]}
+      {iconTypes[type](color)}
     </span>
   );
 }

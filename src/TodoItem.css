@@ -23,30 +23,3 @@
   text-decoration: line-through;
   color: #878787;
 }
-
-.Icon-svg {
-  cursor: pointer;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 23px;
-  width: 23px;
-  padding: 1rem;
-}
-
-.Icon-check:hover {
-  color: #00ff08;
-}
-
-.Icon-check--active {
-  color: #4caf50;
-}
-
-.Icon-delete {
-  height: 20px;
-  width: 20px;
-}
-
-.Icon-delete:hover {
-  color: red
-}
