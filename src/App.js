@@ -11,7 +11,8 @@ const defaultTodos = [
   { text: 'Comprar croquetas', completed: true },
   { text: 'Comprar leche', completed: false },
   { text: 'Estudiar react', completed: false },
-  { text: 'Estudiar javascript', completed: false }
+  { text: 'Estudiar javascript', completed: false },
+  { text: 'Estudiar java para aprender a realizar backend', completed: false }
 ];
 
 function App () {
