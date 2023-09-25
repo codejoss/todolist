@@ -17,7 +17,6 @@ const defaultTodos = [
 
 function App () {
   // Estados
-  // eslint-disable-next-line no-unused-vars
   const [todos, setTodos] = React.useState(defaultTodos);
 
   const [searchValue, setSearchValue] = React.useState('');
