@@ -6,7 +6,8 @@ import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './CreateTodoButton';
 
-const defaultTodos = [
+// ! ADD THIS COMMENTED CODE IN THE CONSOLE OF THE WEB BROWSER TO HAVE TODO'S ITEMS
+/* const defaultTodos = [
   { text: 'Diseño tarjetas Tete', completed: true },
   { text: 'Comprar croquetas', completed: true },
   { text: 'Comprar leche', completed: false },
@@ -15,9 +16,24 @@ const defaultTodos = [
   { text: 'Estudiar java para aprender a realizar backend', completed: false }
 ];
 
+localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos)); */
+
+// localStorage.removeItem('TODOS_V1');
+
 function App () {
+  const localStorageTodos = localStorage.getItem('TODOS_V1');
+
+  let parsedTodos;
+
+  if (!localStorageTodos) {
+    localStorage.setItem('TODOS_V1', JSON.stringify([]));
+    parsedTodos = [];
+  } else {
+    parsedTodos = JSON.parse(localStorageTodos);
+  }
+
   // Estados
-  const [todos, setTodos] = React.useState(defaultTodos);
+  const [todos, setTodos] = React.useState(parsedTodos);
 
   const [searchValue, setSearchValue] = React.useState('');
 
@@ -26,18 +42,23 @@ function App () {
   const totalTodos = todos.length;
   const searchedTodos = todos.filter(todo => todo.text.toLowerCase().includes(searchValue.toLowerCase()));
 
+  const saveTodos = (newTodos) => {
+    localStorage.setItem('TODOS_V1', JSON.stringify(newTodos));
+    setTodos(newTodos);
+  };
+
   const completeTodo = (text) => {
     const newTodos = [...todos];
     const todoIndex = todos.findIndex(todo => todo.text === text);
     newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
-    setTodos(newTodos);
+    saveTodos(newTodos);
   };
 
   const deleteTodo = (text) => {
     const newTodos = [...todos];
     const todoIndex = todos.findIndex(todo => todo.text === text);
     newTodos.splice(todoIndex, 1);
-    setTodos(newTodos);
+    saveTodos(newTodos);
   };
 
   // Begin component
