@@ -27,6 +27,15 @@ function App () {
     saveTodos(newTodos);
   };
 
+  //! USEEFFECT --------------
+  console.log('Log1');
+
+  React.useEffect(() => {
+    console.log('Looooooooog2');
+  }, [totalTodos]);
+
+  console.log('Log3');
+
   // Begin component
   return (
     <AppUI
