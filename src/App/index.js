@@ -5,7 +5,12 @@ import { useLocalStorage } from './useLocalStorage';
 
 function App () {
   // Estados
-  const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
+  const {
+    item: todos,
+    saveItem: saveTodos,
+    loading,
+    error
+  } = useLocalStorage('TODOS_V1', []);
   const [searchValue, setSearchValue] = React.useState('');
 
   // Estados derivados
@@ -27,18 +32,11 @@ function App () {
     saveTodos(newTodos);
   };
 
-  //! USEEFFECT --------------
-  console.log('Log1');
-
-  React.useEffect(() => {
-    console.log('Looooooooog2');
-  }, [totalTodos]);
-
-  console.log('Log3');
-
   // Begin component
   return (
     <AppUI
+      loading = {loading}
+      error = {error}
       completedTodos = {completedTodos}
       totalTodos = {totalTodos}
       searchValue = {searchValue}
