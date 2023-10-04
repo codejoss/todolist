@@ -1,0 +1,29 @@
+.TodosLoading {
+  /* background-color: #565656; */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+  box-shadow: 0px 5px 50px rgba(86, 86, 86, 0.3);
+
+  border-radius: 8px;
+  width: 20rem;
+  height: 3.5rem;
+
+  background: linear-gradient(90deg, rgb(122, 122, 122), rgb(57, 57, 57));
+  background-size: 400% 400%;
+  animation: loadingAnimation 1s ease-in-out infinite;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
