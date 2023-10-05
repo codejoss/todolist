@@ -39,3 +39,18 @@ function useLocalStorage (itemName, initialValue) {
 }
 
 export { useLocalStorage };
+
+// ! ADD THIS COMMENTED CODE IN THE CONSOLE OF THE WEB BROWSER TO HAVE TODO'S ITEMS IN THE LOCALSTORAGE
+/* const defaultTodos = [
+  { text: 'Diseño tarjetas Tete', completed: true },
+  { text: 'Comprar croquetas', completed: true },
+  { text: 'Comprar leche', completed: false },
+  { text: 'Estudiar react', completed: false },
+  { text: 'Estudiar javascript', completed: false },
+  { text: 'Estudiar java para aprender a realizar backend', completed: false }
+];
+
+localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos)); */
+
+// ! DELETE LOCALSTORAGE DATA
+// localStorage.removeItem('TODOS_V1');
