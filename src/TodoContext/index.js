@@ -35,8 +35,6 @@ function TodoProvider ({ children }) {
     saveTodos(newTodos);
   };
 
-  const toggleOpenModal = () => setOpenModal(!openModal);
-
   return (
       <TodoContext.Provider value={ {
         loading,
@@ -49,8 +47,7 @@ function TodoProvider ({ children }) {
         completeTodo,
         deleteTodo,
         openModal,
-        setOpenModal,
-        toggleOpenModal
+        setOpenModal
       } }>
         { children }
       </TodoContext.Provider>
