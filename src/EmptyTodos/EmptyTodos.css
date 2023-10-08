@@ -1,0 +1,11 @@
+p {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--text-color-item-completed);
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--main-color-text);
+}

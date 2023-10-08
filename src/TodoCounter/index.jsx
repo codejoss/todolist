@@ -9,7 +9,7 @@ function TodoCounter () {
   } = React.useContext(TodoContext);
 
   const todosCompletedMessage = 'No hay tareas pendientes';
-  const normalMessage = `Has completado ${completedTodos} de ${totalTodos}`;
+  const normalMessage = `Completado ${completedTodos} de ${totalTodos}`;
 
   const todoMessage = completedTodos === totalTodos ? todosCompletedMessage : normalMessage;
   return (

@@ -22,7 +22,7 @@ function useLocalStorage (itemName, initialValue) {
         setLoading(false);
         setError(true);
       }
-    }, 4000);
+    }, 1500);
   }, [initialValue, itemName]);
 
   const saveItem = (newItem) => {
@@ -47,7 +47,15 @@ export { useLocalStorage };
   { text: 'Comprar leche', completed: false },
   { text: 'Estudiar react', completed: false },
   { text: 'Estudiar javascript', completed: false },
-  { text: 'Estudiar java para aprender a realizar backend', completed: false }
+  { text: 'Estudiar java para aprender a realizar backend', completed: false },
+  { text: 'Comprar tomates', completed: false },
+  { text: 'Comprar arroz', completed: false },
+  { text: 'Comprar frijol', completed: false },
+  { text: 'Comprar azucar', completed: false },
+  { text: 'Comprar pan', completed: false },
+  { text: 'Comprar cebolla', completed: false },
+  { text: 'Comprar sandia', completed: false },
+  { text: 'Comprar pollo', completed: false },
 ];
 
 localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos)); */

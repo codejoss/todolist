@@ -7,6 +7,7 @@ function TodoSearch () {
 
   return (
     <input
+      autoFocus
       placeholder="Pagar renta...."
       className='TodoSearch'
       value={searchValue}

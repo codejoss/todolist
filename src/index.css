@@ -1,8 +1,32 @@
+:root {
+  --background: #242424;
+  --secundary-background: #303030;
+  --main-text-color: #ffffff;
+  --color-red: #c90000;
+  --color-blue: #00aeff;
+  --text-color-item-completed: #878787;
+  --radius-size: 8px;
+}
+
+textarea {
+  padding: 0.3rem;
+  color: #727272;
+  font-size: 1rem;
+  text-indent: 0.8rem;
+  font-style: italic;
+  font-weight: 500;
+  height: 5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #242424;
+  background-color: var(--background);
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: var(--main-text-color);
   font-family: 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

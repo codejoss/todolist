@@ -1,5 +1,11 @@
 .TodoList {
   margin: 0;
-  padding: 0 0 56px 0;
+  padding: 0cqmax 56px;
   list-style: none;
+  height: 40rem;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

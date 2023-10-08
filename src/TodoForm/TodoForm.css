@@ -1,0 +1,69 @@
+@import '../App/App.css';
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--background);
+  max-width: 25rem;
+  width: 25rem;
+  height: 20rem;
+  border: none;
+  border-radius: var(--radius-size);
+  padding: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: var(--color-blue);
+  box-shadow: 0 1rem 2rem #000a;  
+  gap: 2rem;
+}
+
+textarea {
+  border-radius: var(--radius-size);
+  width: calc(100% - 2rem);
+  height: 5rem;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  resize: none;
+  overflow: hidden;
+  text-indent: 0;
+}
+
+
+
+.TodoForm-buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.TodoForm-button {
+  border-radius: var(--radius-size);
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.TodoForm-button--cancel {
+  background: transparent;
+  color: var(--main-text-color);
+}
+
+.TodoForm-button--cancel:hover {
+  background-color: var(--color-red);
+  color: var(--main-text-color);
+}
+
+.TodoForm-button--add {
+  background-color: #0094d9;
+  color: #000;
+}
+
+.TodoForm-button--add:hover {
+  background-color: var(--color-blue);
+  color: var(--main-text-color);
+}

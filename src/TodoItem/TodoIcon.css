@@ -12,7 +12,7 @@
 }
 
 .Icon-container-delete:hover .Icon-svg{
-  fill: red;
+  fill: var(--color-red);
 }
 
 .Icon-container-check:hover .Icon-svg{
