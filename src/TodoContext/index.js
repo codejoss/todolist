@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocalStorage } from './useLocalStorage';
+import { v4 as uuidv4 } from 'uuid';
 
 const TodoContext = React.createContext();
 
@@ -44,6 +45,8 @@ function TodoProvider ({ children }) {
     saveTodos(newTodos);
   };
 
+  const generateUUID = () => uuidv4();
+
   return (
       <TodoContext.Provider value={ {
         loading,
@@ -57,7 +60,8 @@ function TodoProvider ({ children }) {
         deleteTodo,
         openModal,
         setOpenModal,
-        addTodo
+        addTodo,
+        generateUUID
       } }>
         { children }
       </TodoContext.Provider>

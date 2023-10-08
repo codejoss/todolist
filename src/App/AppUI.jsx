@@ -19,7 +19,8 @@ function AppUI () {
     searchedTodos,
     completeTodo,
     deleteTodo,
-    openModal
+    openModal,
+    generateUUID
   } = React.useContext(TodoContext);
 
   return (
@@ -35,7 +36,7 @@ function AppUI () {
 
           { searchedTodos.map(todo => (
             <TodoItem
-              key={todo.text}
+              key={generateUUID()}
               text={todo.text}
               completed={todo.completed}
               onComplete={() => completeTodo(todo.text)}
