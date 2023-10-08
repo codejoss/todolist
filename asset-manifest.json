@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/github.io/todolist/static/css/main.57558fdc.css",
-    "main.js": "/github.io/todolist/static/js/main.5f20141f.js",
-    "index.html": "/github.io/todolist/index.html",
-    "main.57558fdc.css.map": "/github.io/todolist/static/css/main.57558fdc.css.map",
-    "main.5f20141f.js.map": "/github.io/todolist/static/js/main.5f20141f.js.map"
+    "main.css": "/todolist/static/css/main.57558fdc.css",
+    "main.js": "/todolist/static/js/main.5f20141f.js",
+    "index.html": "/todolist/index.html",
+    "main.57558fdc.css.map": "/todolist/static/css/main.57558fdc.css.map",
+    "main.5f20141f.js.map": "/todolist/static/js/main.5f20141f.js.map"
   },
   "entrypoints": [
     "static/css/main.57558fdc.css",
