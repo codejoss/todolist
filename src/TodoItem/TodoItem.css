@@ -1,5 +1,6 @@
 .TodoItem {
   background-color: var(--secundary-background);
+  color: var(--main-text-color);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -20,6 +21,7 @@
   line-height: 20px;
   font-weight: 400;
   text-align: center;
+  color: var(--main-text-color);
 }
 
 .TodoItem-p--complete{
