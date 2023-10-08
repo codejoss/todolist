@@ -12,7 +12,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -33,7 +35,8 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "semistandard": "^17.0.0"
   },
-  "homepage": "https://github.com/codejoss/todolist"
+  "homepage": "https://codejoss/github.io/todolist"
 }
