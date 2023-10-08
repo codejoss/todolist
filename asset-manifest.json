@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/codejoss/todolist/static/css/main.57558fdc.css",
+    "main.js": "/codejoss/todolist/static/js/main.5f20141f.js",
+    "index.html": "/codejoss/todolist/index.html",
+    "main.57558fdc.css.map": "/codejoss/todolist/static/css/main.57558fdc.css.map",
+    "main.5f20141f.js.map": "/codejoss/todolist/static/js/main.5f20141f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57558fdc.css",
+    "static/js/main.5f20141f.js"
+  ]
+}
